@@ -33,10 +33,9 @@ def sorted_matrix
   # However, this time, sort each internal array alphabetically by the first character
   CONVENTIONAL_PRODUCE = ["Grapefruit","Pineapple","Oranges","Watermelon","Eggplant"]
   ORGANIC_PRODUCE = ["Strawberries","Potatoes","Grapes","Avocadoes","Asparagus"]
-  assembled_matrix = [
-    CONVENTIONAL_PRODUCE.sort,
-    ORGANIC_PRODUCE.sort
-  ]
+  sorted_conventional = CONVENTIONAL_PRODUCE.sort
+  sorted_organic = ORGANIC_PRODUCE.sort
+  sorted_matrix = [sorted_conventional, sorted_organic]
 end
 
 def matrix_lookup(matrix, row, column)
